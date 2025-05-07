@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion Utilisateurs</title>
+  <style>
+    :root {
+      --primary: #4285f4;
+      --error: #ea4335;
+      --success: #34a853;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: var(--primary);
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .message {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .error {
+      background-color: #ffebee;
+      color: var(--error);
+    }
+    .success {
+      background-color: #e8f5e9;
+      color: var(--success);
+    }
+    #usersList {
+      margin-top: 20px;
+    }
+    .user-item {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+    }
+    .loading {
+      text-align: center;
+      color: #666;
+    }
+    .login-section {
+      background-color: #f1f8fe;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gestion des Utilisateurs</h1>
+    
+    <div class="section login-section">
+      <h2>Connexion</h2>
+      <div class="form-group">
+        <label for="loginUsername">Nom d'utilisateur</label>
+        <input type="text" id="loginUsername" placeholder="Admin">
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Mot de passe</label>
+        <input type="password" id="loginPassword" placeholder="Mot de passe">
+     
